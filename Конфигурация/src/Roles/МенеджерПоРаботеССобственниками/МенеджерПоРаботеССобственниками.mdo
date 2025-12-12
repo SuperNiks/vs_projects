@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="572bc814-8b78-45d9-b005-c3a79e19867d">
+  <name>МенеджерПоРаботеССобственниками</name>
+  <synonym>
+    <key>ru</key>
+    <value>Менеджер по работе с собственниками</value>
+  </synonym>
+</mdclass:Role>

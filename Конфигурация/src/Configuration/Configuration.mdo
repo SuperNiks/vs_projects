@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="696665af-b4c5-4b88-aaf8-96504888f77a">
+  <name>АрендаКвартир</name>
+  <synonym>
+    <key>ru</key>
+    <value>Аренда квартир</value>
+  </synonym>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="a42a0bb3-3151-4c56-94ec-b6baed4d47cf"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="f5660c38-2d1f-46bb-b80b-1038c2611a1d"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="df6b3a8e-2369-4f93-98f4-d3c3b8518640"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="240f9895-d5d3-4122-98a1-64030fbedc76"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="ffcec4e9-9fe0-43ff-b212-ddb7a0f3826f"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="670b81f1-5abe-439c-919f-411bc9b82cb2"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="e0c93662-7259-4a6e-b923-59f6c548ce53"/>
+  <configurationExtensionCompatibilityMode>8.3.27</configurationExtensionCompatibilityMode>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <usedMobileApplicationFunctionalities>
+    <functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>OSBackup</functionality>
+      <use>true</use>
+    </functionality>
+  </usedMobileApplicationFunctionalities>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <modalityUseMode>DontUse</modalityUseMode>
+  <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
+  <compatibilityMode>8.3.26</compatibilityMode>
+  <languages uuid="4c17dfa0-26c1-4d27-b00e-5516d3229fb2">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.Аренда</subsystems>
+  <subsystems>Subsystem.Настройка</subsystems>
+  <subsystems>Subsystem.НСИ</subsystems>
+  <sessionParameters>SessionParameter.ТекущийПользователь</sessionParameters>
+  <roles>Role.ПолныеПрава</roles>
+  <roles>Role.БазовыеПрава</roles>
+  <roles>Role.ВыводНаПринтерФайлБуферОбмена</roles>
+  <roles>Role.ЗапускВебКлиента</roles>
+  <roles>Role.ЗапускМобильногоКлиента</roles>
+  <roles>Role.ЗапускТолстогоКлиента</roles>
+  <roles>Role.ЗапускТонкогоКлиента</roles>
+  <roles>Role.МенеджерПоРаботеСАрендаторами</roles>
+  <roles>Role.МенеджерПоРаботеССобственниками</roles>
+  <roles>Role.СохранениеДанныхПользователя</roles>
+  <commonModules>CommonModule.ЛогированиеСистемыВызовСервера</commonModules>
+  <commonModules>CommonModule.РаботаСДоговорами</commonModules>
+  <commonModules>CommonModule.ЦенаКвартир</commonModules>
+  <commonModules>CommonModule.ЦеныКвартирыВызовСервера</commonModules>
+  <catalogs>Catalog.Договоры</catalogs>
+  <catalogs>Catalog.Квартиры</catalogs>
+  <catalogs>Catalog.Клиенты</catalogs>
+  <catalogs>Catalog.Сотрудники</catalogs>
+  <documents>Document.ВходПользователя</documents>
+  <documents>Document.ПоступлениеНаРасчетныйСчет</documents>
+  <documents>Document.ПродлениеАренды</documents>
+  <documents>Document.СдачаВАренду</documents>
+  <documents>Document.УстановкаЦенКвартир</documents>
+  <enums>Enum.ВидДоговора</enums>
+  <enums>Enum.Должности</enums>
+  <reports>Report.АрендаЗаПериод</reports>
+  <informationRegisters>InformationRegister.ЦеныКвартир</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.АвансыПокупателей</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ЗадолженностьПокупателей</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
+</mdclass:Configuration>

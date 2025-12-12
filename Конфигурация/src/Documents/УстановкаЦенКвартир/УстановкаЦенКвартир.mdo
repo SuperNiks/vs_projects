@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7e2d562b-c1bd-45ab-a021-daddd5ffd91b">
+  <producedTypes>
+    <objectType typeId="9c0ca361-ab66-4479-96cc-3830c79797da" valueTypeId="ce53bb11-7b0c-4a05-8fec-d381f7886834"/>
+    <refType typeId="77c08b88-873c-4c78-8432-4b1f849a8c72" valueTypeId="5c44c46e-edd6-445e-a1a4-4703ac9a9410"/>
+    <selectionType typeId="dc1c8525-fe8a-4415-9d86-22d92bf565db" valueTypeId="0c813743-247c-4b44-90f4-5ca1eebae214"/>
+    <listType typeId="019f7053-ff0d-4eb1-b73f-255d7dce447f" valueTypeId="277f8236-63dd-4c0b-92ed-def09df05d3c"/>
+    <managerType typeId="fb3e4776-66e5-46fd-9272-1cf25fab36a9" valueTypeId="87f23243-e667-4ce6-9081-613157f1dc0b"/>
+  </producedTypes>
+  <name>УстановкаЦенКвартир</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка цен квартир</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.УстановкаЦенКвартир.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.УстановкаЦенКвартир.Form.ФормаДокумента</defaultObjectForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>InformationRegister.ЦеныКвартир</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="dd31e527-d238-4f6a-9cea-fb9bfedfabca">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a100ab4b-976e-45f9-9016-704094bee0ac">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="3eacbbbf-dfa3-41f6-a479-2d3680d89f01">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="d2d25622-30cb-4a95-93df-33965474e24e">
+    <producedTypes>
+      <objectType typeId="c2741317-70a1-457d-b5b7-5d598c871073" valueTypeId="20c3c52c-f1e4-4ac8-999b-905e438e46eb"/>
+      <rowType typeId="fc679d0a-50d4-4af4-bbcd-0eeeb5de4157" valueTypeId="812b9fb7-6d4d-40cb-a7ca-ba09da3db8a9"/>
+    </producedTypes>
+    <name>ЦеныКвартир</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цены квартир</value>
+    </synonym>
+    <attributes uuid="4d5e5219-32ff-4061-8a9f-e6122902cb2e">
+      <name>Квартира</name>
+      <synonym>
+        <key>ru</key>
+        <value>Квартира</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Квартиры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4b7bf08b-592c-4817-8b94-2469e62f0c51">
+      <name>ЦенаЗаСутки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена за сутки</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

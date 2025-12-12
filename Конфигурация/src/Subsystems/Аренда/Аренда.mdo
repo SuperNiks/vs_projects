@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9b5e8100-7243-4692-b714-1b069f235d41">
+  <name>Аренда</name>
+  <synonym>
+    <key>ru</key>
+    <value>Аренда</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Report.АрендаЗаПериод</content>
+  <content>AccumulationRegister.Продажи</content>
+  <content>Document.СдачаВАренду</content>
+  <content>Document.ПродлениеАренды</content>
+  <content>Catalog.Договоры</content>
+  <content>InformationRegister.ЦеныКвартир</content>
+  <content>Document.ПоступлениеНаРасчетныйСчет</content>
+  <content>AccumulationRegister.АвансыПокупателей</content>
+  <content>AccumulationRegister.ЗадолженностьПокупателей</content>
+</mdclass:Subsystem>

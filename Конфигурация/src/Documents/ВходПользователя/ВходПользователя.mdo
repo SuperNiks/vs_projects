@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="34fb9a01-4afb-4916-9c52-69501feda345">
+  <producedTypes>
+    <objectType typeId="efa8cbe9-d79a-4ea8-8395-2bfa6d60039c" valueTypeId="488cc348-d714-406d-b373-c168b92a3bc0"/>
+    <refType typeId="2aeb8155-5320-4068-83aa-60f91880fac5" valueTypeId="26ed265c-cc91-4e53-a82e-9d85a731315b"/>
+    <selectionType typeId="9db56dcb-a2c5-47dc-882c-109b2f5a3915" valueTypeId="53336d9d-660c-44a8-9128-66cee5830a66"/>
+    <listType typeId="5e99cc7c-c582-4590-9c58-85e4cf065ac1" valueTypeId="ab6eede3-c3d0-48c7-8c27-8471c8c76c1d"/>
+    <managerType typeId="6c4516c9-3765-4f1d-80a6-de05cfc8bad8" valueTypeId="2749c0ec-9bd8-4e30-93e9-92f9c4b274ac"/>
+  </producedTypes>
+  <name>ВходПользователя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вход пользователя</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВходПользователя.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Журнал входа пользователей</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВходПользователя.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="490054d8-b23e-4b1a-8db8-e9fc339135e5">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="0effe483-ac52-40be-8c70-93fe7fad9b12">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>
